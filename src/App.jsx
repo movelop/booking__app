@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import { Home, Hotel, List } from './containers';
 
 const App = () => {
   return (
-    <div>App</div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/hotels" element={<List />} />
+      <Route path="/hotels/:id" element={<Hotel />} />
+    </Routes>
   )
 }
 
