@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 import './Navbar.css';
@@ -7,7 +8,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <span className="logo">MoBooking</span>
+        <Link to="/" className="logo">
+          <span >MoBooking</span>
+        </Link>
         <div className="navItems">
           <span className='currency'>NGN</span>
           <div className="flag">

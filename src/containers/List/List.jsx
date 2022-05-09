@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Navbar, Header } from '../../components';
+
+import './List.css';
 
 const List = () => {
   return (
-    <div>List</div>
+    <div>
+      <Navbar />
+      <Header type = 'list' />
+    </div>
   )
 }
 
