@@ -64,7 +64,7 @@ const Header = () => {
         </h1>
         <p className="headerDesc">
             Get rewarded for your travels – unlock instant savings of 10% or
-            more with a free Lamabooking account
+            more with a free MoBooking account
         </p>
         <button className="headerBtn">Sign In / Register</button>
         <div className="headerSearch">
