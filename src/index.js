@@ -4,11 +4,17 @@ import ReactDOM from 'react-dom/client';
 import App from "./App";
 import "./index.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import { SearchContextProvider } from "./context/SearchContext";
+import { AuthContextProvider } from "./context/AuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <Router>
-        <App />
-    </Router>
+    <AuthContextProvider>
+        <SearchContextProvider>
+            <Router>
+                <App />
+            </Router>
+        </SearchContextProvider>
+    </AuthContextProvider>
 );

@@ -84,3 +84,9 @@
 .listResult {
     flex: 3;
 }
+
+.listError > h1{
+    color: rgb(189, 11, 11);
+    font-size: 24px;
+    font-weight: 500;
+}
