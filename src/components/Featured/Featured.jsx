@@ -16,7 +16,7 @@ const Featured = () => {
         "Abuja",
     ]
 
-    const { data, loading, error } = useFetch('/hotels/countByCity?cities=Ikeja,Ibadan,Abuja');
+    const { data, loading } = useFetch('/hotels/countByCity?cities=Ikeja,Ibadan,Abuja');
 
   return (
     <div className='featured'>
